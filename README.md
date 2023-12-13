@@ -35,3 +35,26 @@ After Clicking the user send money screen will be opened, ender amount and send.
  ```
 Go to the history tab to see the list of transactions. 
  ```
+
+
+
+## Dependencies 
+ ```
+ "@react-native-async-storage/async-storage": "^1.21.0",
+    "@react-native-google-signin/google-signin": "^10.1.1",
+    "@react-navigation/bottom-tabs": "^6.5.11",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/stack": "^6.3.20",
+    "axios": "^1.6.2",
+    "react": "18.2.0",
+    "react-native": "0.73.0",
+    "react-native-gesture-handler": "^2.14.0",
+    "react-native-safe-area-context": "^4.8.0",
+    "react-native-screens": "^3.29.0",
+    "react-native-vector-icons": "^10.0.2"
+ ```
+
+ ## Auth Flow
+ ```
+ google-signin (package for OAuth) --> save to AsyncStorage --> check for data on AsyncStorage if available Login else display Login Screen
+ ```
