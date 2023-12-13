@@ -3,7 +3,6 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import {View,Text,TouchableOpacity,Pressable} from 'react-native'
 import Transactions from '../screens/Transactions/Transcations';
-import DoTransaction from '../screens/DoTransaction/DoTransaction';
 import Users from '../screens/Users/User';
 const Tab = createBottomTabNavigator();
 

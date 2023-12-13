@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import MyTabs from './BottomTabNavigator';
 import Login from '../screens/Login/Login';
 import SendMoney from '../screens/SendMoney';
+import StatusScreen from '../screens/StatusScreen/StatusScreen';
 
 const StackNavigator = () => {
 
@@ -24,6 +25,10 @@ const StackNavigator = () => {
             <Stack.Screen
                 name={"SendMoney"}
                 component={SendMoney}
+            />
+            <Stack.Screen
+                name={"StatusScreen"}
+                component={StatusScreen}
             />
         </Stack.Navigator>
     );

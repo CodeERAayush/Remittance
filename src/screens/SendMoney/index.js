@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useRoute } from '@react-navigation/native'
 import axios from 'axios'
 
-const SendMoney = () => {
+const SendMoney = ({navigation}) => {
     const route=useRoute()
     const [amount,setAmount]=useState()
     const [loading,setLoading]=useState(false)
@@ -22,6 +22,7 @@ const body={
 }
 axios(body).then(r=>{
   setAmount()
+  navigation.navigate("StatusScreen",{data:r?.data})
   ToastAndroid.show(`Amount Successfully transferred to ${route.params?.data?.name}`,4000)
 }).catch(e=>
   {

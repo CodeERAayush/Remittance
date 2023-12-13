@@ -9,7 +9,6 @@ const Login = ({navigation}) => {
 
   const _checkUser=async()=>{
     const user = await AsyncStorage.getItem("user")
-    console.log(user)
     if(user!==null){
       navigation.replace("MyTabs")
     }

@@ -31,7 +31,7 @@ Home Screen will contain the list of users click on the particular user to send 
  ```
 After Clicking the user send money screen will be opened, ender amount and send.  
  ```
-## Step 3: User List
+## Step 3: Transaction History
  ```
 Go to the history tab to see the list of transactions. 
  ```
